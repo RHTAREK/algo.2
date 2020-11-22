@@ -1,0 +1,25 @@
+ALGORITHM exerice_SOl1
+VAR
+   count, sum,i,j:integer;
+    t1,t2:arrayofinteger[50];
+    
+BEGIN
+sum :=0;
+count:=1
+    for i from 0 to t1.length-1 do {
+    j:= 0
+    while j<t2.length-1  do{
+    if  t2[j]==t1[i]{ then
+    count:=+1;}
+        j++;}
+        end if
+    if ( count =2)sum:=sum+t1[i]
+    
+    end if 
+    end for 
+
+
+
+
+
+END

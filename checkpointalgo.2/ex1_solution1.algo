@@ -1,0 +1,30 @@
+ALGORITHM exerice_SOl1
+VAR
+    sum,i,j:integer;
+    t1,t2:arrayofinteger[50];
+    rs:arrayofinteger[100];
+BEGIN
+sum :=0;
+    for i from 0 to t1.length-1 do {
+    j:= 0
+    while j<t2.length-1 do and t2[j]<>t1[i]
+    j++;
+    if (j==t2.length)then{rs:=rs+t1[i]}
+    end if; 
+    }
+    end for ;
+    for j from 0 to t2.length-1 do {
+    i:= 0
+    while i<t1.length-1 do and t2[j]<>t1[i]
+    i++;
+    if (j==t1.length)then{rs:=rs+t2[j]}
+    end if ;}
+    end for ;
+    for i from 0 to rs.length-1 do 
+    sum := sum + rs[i];
+    
+
+
+
+
+END

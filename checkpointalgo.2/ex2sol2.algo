@@ -1,0 +1,50 @@
+ALGORITHM solution2
+
+VAR
+   htab : HASH_TABLE<INTEGER,STRING>; 
+   tab1 , tab2 :array of INTEGER:[50];
+   tabsum : array of integer [100];
+  t1,t2, sum , i ,count: integer ;
+
+
+BEGIN
+write ("ecrire la taille du tab1");
+read (t1);
+for i from 0 to t1-1 do 
+read (tab1[i]);
+write ("ecrire la taille du tab2");
+read (t2);
+for i from 0 to t2-1 do 
+read (tab2[i]);
+tabsum := tab1+tab2 ;
+for i from 0 to tabsum.length-1 do 
+{
+if (htab.lookup (tabsum[i])==true)then{
+count := htab.get (tabsum[i]);
+htab.insert(tabsum[i],count+1);}
+else {
+htab.insert(tabsum[i],1);}
+end if 
+end for 
+}sum :=0;
+for i from 0 to tabsum.length-1 do {
+    if (htab.lookup (tabsum[i]==2) then do {
+        sum :=sum+tabsum[i]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+END
